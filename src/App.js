@@ -6,6 +6,7 @@ function App() {
   return (
     <>
       <div className="container">
+        <p>teste</p>
         <Navbar />
         <Home />
       </div>
