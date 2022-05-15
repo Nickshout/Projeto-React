@@ -1,14 +1,16 @@
 import React from 'react'
 import Navbar from './components/navbar'
+import { Link } from 'react-router-dom'
 import Home from './views/home'
+import CadastroProdutos from './views/produtos/cadastro'
 
-function App() {
+const App = () => {
   return (
     <>
       <div className="container">
-        <p>lá vamos nós</p>
         <Navbar />
-        <Home />
+        <Link to="/cadastro-produtos" element={<CadastroProdutos />} />|{' '}
+        <Link to="/" element={<Home />} />
       </div>
     </>
   )
